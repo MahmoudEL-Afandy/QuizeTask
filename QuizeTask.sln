@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizeTask", "QuizeTask\QuizeTask.csproj", "{1C5B9D00-2B78-4A78-B918-C9669D90EB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{5DBF3927-D6FF-4E0A-AD11-201020EE6F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{7C72DFDC-13A1-439A-9EE6-70F8127D13D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "ApplicationLayer\ApplicationLayer.csproj", "{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C5B9D00-2B78-4A78-B918-C9669D90EB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5B9D00-2B78-4A78-B918-C9669D90EB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5B9D00-2B78-4A78-B918-C9669D90EB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5B9D00-2B78-4A78-B918-C9669D90EB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBF3927-D6FF-4E0A-AD11-201020EE6F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBF3927-D6FF-4E0A-AD11-201020EE6F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBF3927-D6FF-4E0A-AD11-201020EE6F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBF3927-D6FF-4E0A-AD11-201020EE6F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C72DFDC-13A1-439A-9EE6-70F8127D13D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C72DFDC-13A1-439A-9EE6-70F8127D13D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C72DFDC-13A1-439A-9EE6-70F8127D13D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C72DFDC-13A1-439A-9EE6-70F8127D13D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

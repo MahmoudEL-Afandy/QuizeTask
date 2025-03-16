@@ -1,0 +1,11 @@
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+E:\my studies\WorkTasks\ITILegend\QuizeTask\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll
