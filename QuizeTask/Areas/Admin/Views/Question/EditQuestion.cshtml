@@ -1,0 +1,45 @@
+﻿@model Question
+
+<h2>Edit Question</h2>
+<form asp-action="EditQuestion">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="ExamId" />
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Choice1" class="control-label"></label>
+        <input asp-for="Choice1" class="form-control" />
+        <span asp-validation-for="Choice1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Choice2" class="control-label"></label>
+        <input asp-for="Choice2" class="form-control" />
+        <span asp-validation-for="Choice2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Choice3" class="control-label"></label>
+        <input asp-for="Choice3" class="form-control" />
+        <span asp-validation-for="Choice3" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Choice4" class="control-label"></label>
+        <input asp-for="Choice4" class="form-control" />
+        <span asp-validation-for="Choice4" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CorrectAnswer" class="control-label"></label>
+        <select asp-for="CorrectAnswer" class="form-control">
+            <option value="@Model.Choice1">Choice 1</option>
+            <option value="@Model.Choice2">Choice 2</option>
+            <option value="@Model.Choice3">Choice 3</option>
+            <option value="@Model.Choice4">Choice 4</option>
+        </select>
+        <span asp-validation-for="CorrectAnswer" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>

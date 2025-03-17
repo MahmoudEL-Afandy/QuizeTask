@@ -1,7 +1,12 @@
+using ApplicationLayer.Services;
+using DomainLayer.Repositories;
 using InfrastructureLayer.Data;
 using InfrastructureLayer.DbInitializer;
+using InfrastructureLayer.Implementations;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +36,9 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>
     .AddDefaultTokenProviders().AddDefaultUI()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<ExamServices>();
+builder.Services.AddScoped<QuestionServices>();
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 

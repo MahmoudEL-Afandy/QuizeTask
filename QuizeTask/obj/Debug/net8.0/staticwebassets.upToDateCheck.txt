@@ -30,6 +30,7 @@ wwwroot\css\site.css
 wwwroot\customer\assets\favicon.ico
 wwwroot\customer\css\styles.css
 wwwroot\customer\js\scripts.js
+wwwroot\exam\exam.js
 wwwroot\favicon.ico
 wwwroot\js\.eslintrc.json
 wwwroot\js\adminlte.js

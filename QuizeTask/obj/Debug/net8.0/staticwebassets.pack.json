@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\customer\\js\\scripts.js"
     },
     {
+      "Id": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\exam\\exam.js",
+      "PackagePath": "staticwebassets\\exam\\exam.js"
+    },
+    {
       "Id": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

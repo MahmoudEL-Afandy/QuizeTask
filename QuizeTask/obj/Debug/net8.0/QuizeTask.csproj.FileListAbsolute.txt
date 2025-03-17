@@ -597,3 +597,6 @@ E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\Microsoft
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\DomainLayer.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\DomainLayer.pdb
+E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\ApplicationLayer.dll
+E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\obj\Debug\net8.0\QuizeTask.sourcelink.json

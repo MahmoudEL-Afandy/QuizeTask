@@ -1,0 +1,36 @@
+﻿
+@model QuestionVM
+
+
+@* <div> *@
+    @* <a href="/Admin/Question/AddQuestion?examId=@Model.ExamId" class="btn btn-primary">Create Question</a> *@
+    <div>
+        @Html.ActionLink("Create Question", "AddQuestion", "Question", new { examId = Model.ExamId }, new { @class = "btn btn-primary" })
+    </div>
+@* </div> *@
+<table class="table table-hover" width="100%">
+    <thead class="text-bold">
+        <tr>
+            <td>Exam ID</td>
+            <td>Question Title</td>
+            <td>Correct Answer</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+    @foreach (var item in Model.Questions)
+    {
+        <tr>
+            <td>@item.ExamId</td>
+            @*  after i create the description by tinyMCE save the text as html.syntax so when i display it will appear as html, and i will use the next way to make it as the text   *@
+            <td>@item.Title</td>
+            <td>@item.CorrectAnswer</td>
+            <td>
+                <a href="/Admin/Question/EditQuestion/@item.Id" class="btn btn-success">Edit</a>
+                <a href="/Admin/Question/DeleteQuestion/@item.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+
+
+    };
+</table>
+

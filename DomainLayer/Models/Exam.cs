@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace DomainLayer.Models
 {
     public class Exam
     {
+        
         public int Id { get; set; }
 
         [Required]
@@ -16,7 +18,7 @@ namespace DomainLayer.Models
 
         [Required]
         public string Description { get; set; }
-
+        [ValidateNever]
         public ICollection<Question> Questions { get; set; }
 
     }

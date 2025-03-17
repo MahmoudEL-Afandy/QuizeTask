@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VFZyCwzHHJ1ooYjMM+vF0doOzg/wUb8JgcwUuVJgoLM=",
+  "Hash": "9nH0TZ+AJzVxsKhLpY1vMpgmMnz2mEMcLMRxq1bNiq0=",
   "Source": "QuizeTask",
   "BasePath": "_content/QuizeTask",
   "Mode": "Default",
@@ -1989,6 +1989,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\customer\\js\\scripts.js"
+    },
+    {
+      "Identity": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\exam\\exam.js",
+      "SourceId": "QuizeTask",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\",
+      "BasePath": "_content/QuizeTask",
+      "RelativePath": "exam/exam#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "543u0bg3nn",
+      "Integrity": "RTfJS+OyIWVEks0e4O5PurcBnDQTD0Ltjqysy20BmeE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exam\\exam.js"
     },
     {
       "Identity": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\favicon.ico",
@@ -6944,6 +6965,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ZfEVpnGr+TXr1LfZZrITWxGlhBLv4FhqV6hrt5xhoTE="
+        }
+      ]
+    },
+    {
+      "Route": "exam/exam.543u0bg3nn.js",
+      "AssetFile": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\exam\\exam.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RTfJS+OyIWVEks0e4O5PurcBnDQTD0Ltjqysy20BmeE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "543u0bg3nn"
+        },
+        {
+          "Name": "label",
+          "Value": "exam/exam.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RTfJS+OyIWVEks0e4O5PurcBnDQTD0Ltjqysy20BmeE="
+        }
+      ]
+    },
+    {
+      "Route": "exam/exam.js",
+      "AssetFile": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\wwwroot\\exam\\exam.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RTfJS+OyIWVEks0e4O5PurcBnDQTD0Ltjqysy20BmeE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RTfJS+OyIWVEks0e4O5PurcBnDQTD0Ltjqysy20BmeE="
         }
       ]
     },

@@ -311,3 +311,4 @@ E:\my studies\WorkTasks\ITILegend\QuizeTask\InfrastructureLayer\bin\Debug\net8.0
 E:\my studies\WorkTasks\ITILegend\QuizeTask\InfrastructureLayer\bin\Debug\net8.0\DomainLayer.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\InfrastructureLayer\bin\Debug\net8.0\DomainLayer.pdb
 E:\my studies\WorkTasks\ITILegend\QuizeTask\InfrastructureLayer\obj\Debug\net8.0\Infrastr.B5BC0072.Up2Date
+E:\my studies\WorkTasks\ITILegend\QuizeTask\InfrastructureLayer\obj\Debug\net8.0\InfrastructureLayer.sourcelink.json

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace DomainLayer.Models
         public string CorrectAnswer { get; set; }
 
         public int ExamId { get; set; }
+        [ValidateNever]
         public Exam Exam { get; set; }
 
     }

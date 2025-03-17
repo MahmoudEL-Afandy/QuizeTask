@@ -311,3 +311,4 @@ E:\my studies\WorkTasks\ITILegend\QuizeTask\DomainLayer\bin\Debug\net8.0\refs\Sy
 E:\my studies\WorkTasks\ITILegend\QuizeTask\DomainLayer\bin\Debug\net8.0\refs\System.Xml.XPath.XDocument.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\DomainLayer\bin\Debug\net8.0\refs\WindowsBase.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache
+E:\my studies\WorkTasks\ITILegend\QuizeTask\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
