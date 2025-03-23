@@ -21,6 +21,6 @@ namespace InfrastructureLayer.Data
 
         public DbSet<Exam> Exams { get; set; }
         public DbSet<Question> Questions { get; set; }
-        public DbSet<UserExamResult> UserExams { get; set; }
+        public DbSet<UserExamResult> UserExamResults { get; set; }
     }
 }

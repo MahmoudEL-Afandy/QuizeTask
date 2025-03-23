@@ -1,10 +1,12 @@
 ﻿using ApplicationLayer.Services;
 using ApplicationLayer.ViewModel;
 using DomainLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace QuizeTask.Areas.Admin.Controllers
 {
+    
     [Area("Admin")]
     public class QuestionController : Controller
     {
@@ -19,7 +21,7 @@ namespace QuizeTask.Areas.Admin.Controllers
             QuestionVM questionVM = new QuestionVM();
             var questions = _questionServices.GetAllQuestions(id);
 
-            questionVM.Questions = questions;
+            questionVM.Questions = questions.ToList();
             questionVM.ExamId = id;
             return View(questionVM);
         }
@@ -39,7 +41,8 @@ namespace QuizeTask.Areas.Admin.Controllers
             {
                 
                 _questionServices.AddQuestion(question);
-                
+                TempData["create"] = "Data Has Created Successfully";
+
                 return RedirectToAction("Index", new {id = question.ExamId});
             }
             return View(question);
@@ -59,6 +62,7 @@ namespace QuizeTask.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 _questionServices.UpdateQuestion(question);
+                TempData["update"] = "Data Has updated Successfully";
                 return RedirectToAction("Index", new { id = question.ExamId });
             }
             return View(question);
@@ -67,6 +71,7 @@ namespace QuizeTask.Areas.Admin.Controllers
         public IActionResult DeleteQuestion(int id)
         {
             _questionServices.DeleteQuestion(id);
+            TempData["delete"] = "Data has deleted successfully";
             return RedirectToAction("Index", "Exam");
         }
     }

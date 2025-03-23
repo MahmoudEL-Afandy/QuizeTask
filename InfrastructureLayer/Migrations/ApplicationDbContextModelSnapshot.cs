@@ -100,11 +100,16 @@ namespace InfrastructureLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("PassStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("PassStatus")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("Score")
+                    b.Property<decimal>("Score")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TotalCorrectAnswers")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalQuestions")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -113,7 +118,7 @@ namespace InfrastructureLayer.Migrations
 
                     b.HasIndex("IdentityUserId");
 
-                    b.ToTable("UserExams");
+                    b.ToTable("UserExamResults");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

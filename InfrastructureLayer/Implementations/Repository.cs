@@ -61,6 +61,7 @@ namespace InfrastructureLayer.Implementations
             return query.ToList();
         }
 
+       
 
         public T GetFirstOrDefault(Expression<Func<T, bool>>? predicate, string? IncludeWord = null)
         {
@@ -79,7 +80,7 @@ namespace InfrastructureLayer.Implementations
                 }
 
             }
-            return query.SingleOrDefault();
+            return query.FirstOrDefault();
         }
 
         public bool Update(T entity)

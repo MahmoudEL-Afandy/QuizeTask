@@ -22,23 +22,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
     );
 
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 
-
-//builder.Services.AddIdentity<IdentityUser, IdentityRole>
-//    (option => option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromHours(4))
-//    .AddDefaultTokenProviders().AddDefaultUI()
-//    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-
-builder.Services.AddIdentity<IdentityUser, IdentityRole>
-    (option => option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromHours(4))
-    .AddDefaultTokenProviders().AddDefaultUI()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUserExamRepository, UserExamRepository>();
 builder.Services.AddScoped<ExamServices>();
 builder.Services.AddScoped<QuestionServices>();
+builder.Services.AddScoped<ExamResultService>();
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
@@ -72,7 +63,7 @@ app.MapControllerRoute(
 app.MapControllerRoute(
 
     name: "default",
-    pattern: "{area=User}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=User}/{controller=UserExam}/{action=Index}/{id?}");
 
 
 //app.MapControllerRoute(

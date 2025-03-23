@@ -1,9 +1,11 @@
 ﻿using ApplicationLayer.Services;
 using DomainLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace QuizeTask.Areas.Admin.Controllers
 {
+   
     [Area("Admin")]
     public class ExamController : Controller
     {
@@ -37,6 +39,7 @@ namespace QuizeTask.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 _examServices.AddExam(exam);
+                TempData["create"] = "Data Has Created Successfully";
                 return RedirectToAction("Index");
             }
             return View(exam);
@@ -56,6 +59,7 @@ namespace QuizeTask.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 _examServices.UpDateExam(exam);
+                TempData["update"] = "Data Has updated Successfully";
                 return RedirectToAction("Index");
             }
             return View(exam);

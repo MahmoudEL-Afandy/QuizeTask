@@ -600,3 +600,5 @@ E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\DomainLay
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\ApplicationLayer.dll
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\ApplicationLayer.pdb
 E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\obj\Debug\net8.0\QuizeTask.sourcelink.json
+E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\X.PagedList.dll
+E:\my studies\WorkTasks\ITILegend\QuizeTask\QuizeTask\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll

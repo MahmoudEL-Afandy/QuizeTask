@@ -1,0 +1,98 @@
+﻿
+@* @model UserExamResult *@
+@* <h2>Exam Result</h2> *@
+@* <p>Your score: @Model.Score %</p> *@
+@* <p>Correct Answers: @Model.TotalCorrectAnswers / @Model.TotalQuestions</p> *@
+@* <p>Status: @( Model.PassStatus ? "Passed" : "Failed")</p>  *@
+@* <a asp-action="Index">Back to Exams</a>  *@
+
+@model UserExamResult
+
+@{
+    ViewBag.Title = "Exam Result";
+}
+
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Custom CSS for Animations -->
+<style>
+    /* Fade-In Animation */
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Card Styling */
+    .result-card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Status Styling */
+    .status-passed {
+        color: #28a745; /* Green for passed */
+    }
+
+    .status-failed {
+        color: #dc3545; /* Red for failed */
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card result-card fade-in">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="card-title mb-0"><i class="fas fa-clipboard-check me-2"></i>Exam Result</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Score -->
+                    <div class="mb-4">
+                        <h4><i class="fas fa-chart-line me-2"></i>Your Score</h4>
+                        <p class="h2">@Model.Score %</p>
+                    </div>
+
+                    <!-- Correct Answers -->
+                    <div class="mb-4">
+                        <h4><i class="fas fa-check-circle me-2"></i>Correct Answers</h4>
+                        <p class="h4">@Model.TotalCorrectAnswers / @Model.TotalQuestions</p>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="mb-4">
+                        <h4><i class="fas fa-trophy me-2"></i>Status</h4>
+                        <p class="h4 @(Model.PassStatus ? "status-passed" : "status-failed")">
+                            @(Model.PassStatus ? "Passed 🎉" : "Failed 😔")
+                        </p>
+                    </div>
+
+                    <!-- Back to Exams Button -->
+                    <div class="text-center">
+                        <a asp-action="Index" class="btn btn-primary btn-lg">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Exams
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

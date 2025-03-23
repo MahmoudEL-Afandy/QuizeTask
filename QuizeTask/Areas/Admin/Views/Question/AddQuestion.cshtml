@@ -1,6 +1,10 @@
 ﻿@model Question 
+@{
+    ViewBag.PageTitle = "Question Management";
+    ViewBag.CardTitle = "Create Question";
+}
 
-<h2>Add Question</h2>
+
 <form method="post" asp-action="AddQuestion">
     <input type="hidden" asp-for="ExamId" />
     <div class="form-group">

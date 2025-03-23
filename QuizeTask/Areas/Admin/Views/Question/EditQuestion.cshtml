@@ -1,6 +1,9 @@
 ﻿@model Question
+@{
+    ViewBag.PageTitle = "Question Management";
+    ViewBag.CardTitle = "Updeate Question";
+}
 
-<h2>Edit Question</h2>
 <form asp-action="EditQuestion">
     <input type="hidden" asp-for="Id" />
     <input type="hidden" asp-for="ExamId" />

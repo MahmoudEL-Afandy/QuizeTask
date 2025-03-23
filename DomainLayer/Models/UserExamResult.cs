@@ -14,9 +14,12 @@ namespace DomainLayer.Models
         public int Id { get; set; }
 
 
-        public int Score { get; set; }
+        public decimal Score { get; set; }
 
-        public string PassStatus { get; set; }
+        public bool PassStatus { get; set; }
+
+        public int TotalCorrectAnswers {  get; set; }
+        public int TotalQuestions { get; set; }
 
         public int ExamId { get ; set; }
         public Exam Exam { get; set; }

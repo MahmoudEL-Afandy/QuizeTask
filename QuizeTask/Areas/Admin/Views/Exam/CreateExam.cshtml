@@ -1,12 +1,12 @@
 ﻿
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+
 @{
+    ViewBag.PageTitle = "Exam Management";
+    ViewBag.CardTitle = "Create Exam";
 }
 @model Exam
 
-<h2>Create Exam</h2>
+
 <form method="post"  asp-action="CreateExam">
 @* <form asp-action="Index"> *@
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>

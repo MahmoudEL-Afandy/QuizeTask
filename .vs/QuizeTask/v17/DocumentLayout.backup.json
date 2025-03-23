@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1C5B9D00-2B78-4A78-B918-C9669D90EB50}|QuizeTask\\QuizeTask.csproj|e:\\my studies\\worktasks\\itilegend\\quizetask\\quizetask\\areas\\admin\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C5B9D00-2B78-4A78-B918-C9669D90EB50}|QuizeTask\\QuizeTask.csproj|solutionrelative:quizetask\\areas\\admin\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}|ApplicationLayer\\ApplicationLayer.csproj|e:\\my studies\\worktasks\\itilegend\\quizetask\\applicationlayer\\services\\questionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85DB6BCE-E7F3-4172-8B85-8E70F165CE37}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\questionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C5B9D00-2B78-4A78-B918-C9669D90EB50}|QuizeTask\\QuizeTask.csproj|e:\\my studies\\worktasks\\itilegend\\quizetask\\quizetask\\areas\\admin\\views\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1C5B9D00-2B78-4A78-B918-C9669D90EB50}|QuizeTask\\QuizeTask.csproj|solutionrelative:quizetask\\areas\\admin\\views\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,45 +54,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\Areas\\Admin\\Views\\Question\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuizeTask\\Areas\\Admin\\Views\\Question\\Index.cshtml",
-              "ToolTip": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\Areas\\Admin\\Views\\Question\\Index.cshtml",
-              "RelativeToolTip": "QuizeTask\\Areas\\Admin\\Views\\Question\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T20:07:19.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\Areas\\Admin\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "QuizeTask\\Areas\\Admin\\Controllers\\QuestionController.cs",
-              "ToolTip": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\QuizeTask\\Areas\\Admin\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "QuizeTask\\Areas\\Admin\\Controllers\\QuestionController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAEUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:03:09.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuestionServices.cs",
-              "DocumentMoniker": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\ApplicationLayer\\Services\\QuestionServices.cs",
-              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\QuestionServices.cs",
-              "ToolTip": "E:\\my studies\\WorkTasks\\ITILegend\\QuizeTask\\ApplicationLayer\\Services\\QuestionServices.cs",
-              "RelativeToolTip": "ApplicationLayer\\Services\\QuestionServices.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:11:30.795Z",
-              "EditorCaption": ""
             }
           ]
         }

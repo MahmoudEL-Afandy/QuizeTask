@@ -1,0 +1,110 @@
+﻿@model IPagedList<Exam>
+
+@{
+    ViewBag.Title = "Exams";
+}
+
+<!-- Font Awesome CSS (Optional) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 mt-5">
+        <!-- Search Bar -->
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="Search exams..." />
+                    <button type="button" id="search-button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exam Cards -->
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center" id="exam-cards-container">
+            @foreach (var item in Model)
+            {
+                <div class="col mb-5 exam-card" data-search="@item.Title.ToLower() @item.Description.ToLower()">
+                    <div class="card h-100 shadow-sm">
+                        <!-- Card Header -->
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">@item.Title</h5>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body p-4">
+                            <p class="card-text">@item.Description</p>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark btn-lg mt-auto" href="/User/UserExam/TakeExam/@item.Id">
+                                    <i class="fas fa-pencil-alt me-2"></i>Take Exam
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination -->
+        <div class="d-flex justify-content-center mt-5">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page}),
+                     new PagedListRenderOptions
+            {
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" },
+            })
+        </div>
+    </div>
+</section>
+
+<!-- Optional: Add Hover Effects -->
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+
+<!-- JavaScript for Client-Side Search -->
+@section Scripts {
+    <script>
+        // Function to filter exam cards based on search term
+        function filterExams(searchTerm) {
+            const examCards = document.querySelectorAll('.exam-card');
+            searchTerm = searchTerm.toLowerCase();
+
+            examCards.forEach(card => {
+                const searchData = card.getAttribute('data-search');
+                if (searchData.includes(searchTerm)) {
+                    card.style.display = 'block'; // Show the card
+                } else {
+                    card.style.display = 'none'; // Hide the card
+                }
+            });
+        }
+
+        // Add event listener to the search input
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const searchTerm = e.target.value;
+            filterExams(searchTerm);
+        });
+
+        // Add event listener to the search button
+        document.getElementById('search-button').addEventListener('click', () => {
+            const searchTerm = document.getElementById('search-input').value;
+            filterExams(searchTerm);
+        });
+    </script>
+}

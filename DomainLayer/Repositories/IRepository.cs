@@ -16,6 +16,7 @@ namespace DomainLayer.Repositories
         IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null, string? IncludeWord = null);
 
         T GetFirstOrDefault(Expression<Func<T, bool>>? predicate, string? IncludeWord = null);
+        
 
         bool Update (T entity);
 
